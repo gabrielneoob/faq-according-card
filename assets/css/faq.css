@@ -35,6 +35,11 @@ h1 {
   align-items: center;
   cursor: pointer;
   padding: 20px 0;
+  transition: color 0.4s;
+}
+
+.accordion-question:hover {
+  color: var(--soft-red);
 }
 
 /* .accordion-question::after {
