@@ -36,6 +36,24 @@ main {
   box-shadow: 5px 15px 20px rgba(0, 0, 0, 0.4);
 }
 
+.challenge {
+  position: absolute;
+  bottom: 50px;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2rem;
+  color: var(--very-dark-blue);
+}
+
+.challenge a {
+  color: #fff;
+  transition: color 0.4s;
+}
+
+.challenge a:hover {
+  color: var(--soft-red);
+}
+
 @media (max-width: 1000px) {
   main {
     grid-template-columns: 1fr;
