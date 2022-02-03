@@ -43,6 +43,7 @@ main {
   text-align: center;
   font-size: 1.2rem;
   color: var(--very-dark-blue);
+  z-index: -2;
 }
 
 .challenge a {
@@ -58,5 +59,10 @@ main {
   main {
     grid-template-columns: 1fr;
     width: 300px;
+  }
+
+  .challenge {
+    font-size: 1rem;
+    bottom: 10px;
   }
 }
