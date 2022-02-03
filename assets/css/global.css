@@ -31,7 +31,14 @@ main {
   background-color: #fff;
   border-radius: 20px;
   display: grid;
-  grid-template-columns: 0.9fr 0.8fr;
+  grid-template-columns: 1fr 1.1fr;
   align-items: center;
-  padding: 70px 70px 70px 0;
+  box-shadow: 5px 15px 20px rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 1000px) {
+  main {
+    grid-template-columns: 1fr;
+    width: 300px;
+  }
 }
