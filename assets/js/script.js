@@ -1,4 +1,5 @@
 let answers = document.querySelectorAll('.accordion');
+let arrow = document.querySelectorAll('.arrow');
 //answers[0].childNodes[3]
 answers.forEach((item,index) => {
   item.addEventListener('click', () => {
@@ -12,12 +13,17 @@ answers.forEach((item,index) => {
     } else {
       item.childNodes[1].classList.add('bold');
     }
+    if(arrow[index].classList.contains('arrowWrapper')){
+      arrow[index].classList.remove('arrowWrapper');
+    } else {
+      arrow[index].classList.add('arrowWrapper');
+    }
   })
 });
 
 
-let firstQuestion = document.getElementsByTagName('p')[0];
-let firstAnswer = document.getElementsByTagName('p')[1];
+// let firstQuestion = document.getElementsByTagName('p')[0];
+// let firstAnswer = document.getElementsByTagName('p')[1];
 
 let question = document.getElementsByTagName('div');
 
